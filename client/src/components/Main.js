@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { COLORS, ENDPOINT } from '../resources/Resources';
+import { COLORS, ENDPOINT, SAMPLE_LOADING_SIZE } from '../resources/Resources';
 import Restaurant from './Restaurant';
+import Loading from './Loading';
 import { Container, Row, Col, Alert, Navbar } from 'react-bootstrap';
 import axios from 'axios';
 
@@ -50,7 +51,7 @@ export default class Main extends Component
                 <Alert variant="danger" show={this.state.showAlert} dissimissible className="mb-3">{this.state.alertBody}</Alert>
                 <Row className="justify-content-md-center">
                     {this.state.restaurants.map((restaurant, index) =>
-                        <Col xs={4} sm="auto">
+                        <Col xs="auto" sm="auto">
                             <Restaurant key={index} restaurant={restaurant} />
                         </Col>
                     )}

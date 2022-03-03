@@ -11,6 +11,10 @@ export const COLORS = {
     }
 }
 
+export const LOADING_ANIMATION = "glow";
+
+export const SIZE = 50;
+
 export const CARD_WIDTH = "24rem"
 
-export const ENDPOINT = "https://random-data-api.com/api/restaurant/random_restaurant?size=50";
+export const ENDPOINT = "https://random-data-api.com/api/restaurant/random_restaurant?size=" + SIZE;
