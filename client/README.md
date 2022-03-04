@@ -2,7 +2,7 @@
 
 This project simply queries for 50 random restaurants and displays their information. To learn more about how to run the project, refer to the seciton below.
 
---
+---
 
 # Getting Started with Create React App
 
