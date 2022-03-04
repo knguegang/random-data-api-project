@@ -1,9 +1,9 @@
 import Main from './components/Main';
-import { COLORS } from './resources/Resources';
+import './styles.css';
 
 function App() {
   return (
-    <div style={{background: COLORS.PAGE_BACKGROUND}}>
+    <div className="app-background">
       <Main />
     </div>
   );

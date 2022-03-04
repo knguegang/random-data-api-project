@@ -1,0 +1,44 @@
+.restaurant-name 
+{
+    color: #2D2D34;
+}
+
+.restaurant-type
+{
+    color: #B97375;
+}
+
+.restaurant-hours
+{
+    color: #CAD5C5;
+}
+
+.restaurant-phone-number
+{
+    color: #856F77;
+}
+
+.restaurant-address
+{
+    color: #51292A;
+}
+
+.restaurant-review
+{
+    color: #874559;
+}
+
+.navbar
+{
+    background-color: #D5AEB7;
+}
+
+.card-width
+{
+    width: 24rem;
+}
+
+.app-background 
+{
+    background: #F1E4E8;
+}

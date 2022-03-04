@@ -1,10 +1,10 @@
-import { LOADING_ANIMATION, CARD_WIDTH } from '../resources/Resources';
+import { LOADING_ANIMATION } from '../resources/Resources';
 import { Card, ListGroup, ListGroupItem, Container, Row, Col, Placeholder } from 'react-bootstrap';
 
 export default function Loading()
 {
     return (
-        <Card border="dark" style={{ width: CARD_WIDTH }} className="mt-3 mb-3">
+        <Card border="dark" className="card-width mt-3 mb-3">
             <Card.Img variant="top" src="" />
             <Card.Body>
                 <Placeholder as={Card.Title} animation={LOADING_ANIMATION}>

@@ -1,32 +1,33 @@
-import { COLORS, CARD_WIDTH } from '../resources/Resources';
+import '../styles.css';
 import { Card, ListGroup, ListGroupItem, Container, Row, Col } from 'react-bootstrap';
+
 
 export default function Restaurant({ restaurant })
 {
     return (
-        <Card border="dark" style={{ width: CARD_WIDTH }} className="mt-3 mb-3">
+        <Card border="dark" className="card-width mt-3 mb-3">
             <Card.Img variant="top" src={restaurant.logo} />
             <Card.Body>
-                <Card.Title style={{color: COLORS.RESTAURANT.NAME}}>{restaurant.name}</Card.Title>
-                <Card.Subtitle style={{color: COLORS.RESTAURANT.TYPE}}>{restaurant.type}</Card.Subtitle>
+                <Card.Title className="restaurant-name">{restaurant.name}</Card.Title>
+                <Card.Subtitle className="restaurant-type">{restaurant.type}</Card.Subtitle>
                 <Card.Text>{restaurant.description}</Card.Text>
             </Card.Body>
             <ListGroup className="list-group-flush">
                 <ListGroupItem>
-                    <Card.Subtitle style={{color: COLORS.RESTAURANT.PHONE_NUMBER}}>Phone number</Card.Subtitle>
+                    <Card.Subtitle className="restaurant-phone-number">Phone number</Card.Subtitle>
                     <Card.Text>{restaurant.phone_number}</Card.Text>
                 </ListGroupItem>
                 <ListGroupItem>
-                    <Card.Subtitle style={{color: COLORS.RESTAURANT.ADDRESS}}>Address</Card.Subtitle>
+                    <Card.Subtitle className="restaurant-address">Address</Card.Subtitle>
                     <Card.Text>{restaurant.address}</Card.Text>
                 </ListGroupItem>
                 <ListGroupItem>
-                    <Card.Subtitle style={{color: COLORS.RESTAURANT.REVIEW}}>Reviews</Card.Subtitle>
+                    <Card.Subtitle className="restaurant-review">Reviews</Card.Subtitle>
                     <Card.Text><li>{restaurant.review}</li></Card.Text>
                 </ListGroupItem>
             </ListGroup>
             <Card.Body>
-                <Card.Subtitle style={{color: COLORS.RESTAURANT.HOURS}}>Hours</Card.Subtitle>
+                <Card.Subtitle className="restaurant-hours">Hours</Card.Subtitle>
                 <Container>
                     <Row>
                         <Col>
