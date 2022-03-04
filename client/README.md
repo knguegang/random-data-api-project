@@ -1,3 +1,9 @@
+# Random Restaurant Displayer
+
+This project simply queries for 50 random restaurants and displays their information. To learn more about how to run the project, refer to the seciton below.
+
+--
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
